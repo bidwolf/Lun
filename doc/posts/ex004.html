@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Henrique de Paula Rodrigues">
+    <meta name="description" content="Esta é uma página voltada para o aprendizado de formatação avançada em html.">
+    <title>Formatação avançada de html</title>
+    <link rel="shortcut icon" href="../../images/lun_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/ex004.css">
+</head>
+
+<body>
+    <img src="../../images/lunLema.png" title="Página inicial da Lun" alt="Banner da lun">
+    <ul>
+        <li><a href="../../index.html" title="Formatação de textos e estrutura html">Página inicial</a></li>
+        <li>
+            <a href="ex001.html" title="Olá mundo" description="Um teste que adiciona javascript e css no mesmo arquivo"> Exercício 1</a>
+        </li>
+        <li>
+            <a href="ex002.html" title="Calculadora de empréstimos" description="Uma calculadora de amortização de empréstimos utilizando o método PRICE">Exercício 2</a>
+        </li>
+        <li>
+            <a href="ex003.html" title="Imagens, títulos e listas">Exercício 3</a></li>
+        <li>
+            Exercício 4
+        </li>
+    </ul>
+    <hr>
+    <h1>Formatação de textos</h1>
+    <h2>Blockquote</h2>
+    <p>É uma das formas de se quotar textos, citando blocos de textos de forma assertiva, como se estivesse respondendo a uma mensagem
+        <br> a respeito daquela parte do texto.
+        <br> Não é possível mostrar o conteúdo original a ser citado sem utilizar js e css, algo que vai ser implementado aqui nesse post como
+        <br> forma de consulta e aprendizado.
+    </p>
+    <blockquote cite="https://www.google.com">
+        <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+        Quotation Element</em>) indicates that the enclosed text is an extended quotation.
+            <br> You will watch more examples in <cite>Google</cite></p>
+    </blockquote>
+    <p>O texto entre as tags &lt; blockquote&gt; pode conter o atributo cite que por sua vez
+        <br> pode ser utilizado para citar o link ou autor utilizando as tags &lt;cite&gt;
+        <br> Assim como eu faço para citar o <cite>Google</cite>!
+    </p>
+    <p>Também é possível fazer cotação em linha utilizando as tags<code>&lt;q&gt;</code>. Assim como eu faço para citar o google em linha:
+        <br> <q cite="https://www.google.com">Google é o site de buscas mais utilizado do mundo
+    </q>-- <a href="https://pt.wikipedia.org/wiki/Google" title="Quem é o google.com"><cite> wikipedia</cite></a></p>
+    <hr>
+    <h2>Abreviações</h2>
+    <p>Para indicar abreviações de textos, ou siglas como a da NASA, você pode utilizar as tags &lt;abbr&gt;.
+        <br>Elas vão lhe permitir omitir o significado da sigla <abbr title="Organização das nações unidas">ONU</abbr> de forma muito útil.
+        <br> Deve-se lembrar de fazer o uso do atributo title para dar significado a sigla e mostrá-la quando o mouse estiver sobre a sigla.
+    </p>
+    <hr>
+    <h2>Endereços</h2>
+    <p>Para marcar endereços é muito simples basta utilizar a tag &lt;address&gt; permitindo marcar o texto como se fosse um endereço.
+        <br> Exemplo:
+        <blockquote><address>Rua dos bobos, 0 , Bairro dos bobos, Cidade dos bobos, Bahia, Brasil.</address></blockquote>
+    </p>
+    <hr>
+    <h2>Sobrescrever e subscrever</h2>
+    <p>Duas coisas muito úteis quando se fala de matemática ou química e que hora ou outra vai ser útil para suas aplicações web.
+    </p>
+    <ul>
+        <li> Para sobrescrever algum texto, você pode simplesmente adicionar a tag &lt;sup&gt;. ex: 2<sup>2</sup></li>
+        <li>Para adicionar um texto subscrito, você pode simplesmente adicionar a tag &lt;sub&gt;.ex:Co<sub>2</sub></li>
+    </ul>
+    <hr>
+    <h2>Códigos</h2>
+    <p>Representar códigos em html são uma tarefa um tanto quanto <abbr title="Esquisita">esquisity</abbr>, mas fácilmente implementável.</p>
+    <ul>
+        <li>Para adicionar códigos basta colocar o texto entre tags &lt;code&gt;.</li>
+        <li>Você pode usar a tag &lt;var&gt; para marcar um nome de variável no código.
+        </li>
+        <li>Você pode usar a tag &lt;kbd&gt; para marcar a entrada de dados pelo teclado.</li>
+        <li>Você pode usar a tag &lt;samp&gt; para marcar a saída de um código.</li>
+        <li>Identação é importante em códigos e por padrão os interpretadores de marcação html ignoram espaços em branco.</li>
+        <li>Para adicionar espaços em branco basta preceder o código com as tags &lt;pre&gt;.
+            <br>ex: Apertando a tecla <kbd>F11</kbd> o seguinte código produz a saída <samp>"HMM, Bananinha..."</samp>
+            <pre>
+                <code>
+
+var <var>fruit</var>="banana";
+    if(<var>fruit</var>!="banana"){
+        window.log("Isso não tem gosto de banana!");
+    }else{
+        window.log("HMM, Bananinha...")
+    }
+                </code>
+            </pre>
+        </li>
+
+    </ul>
+    <hr>
+    <h2>Datas e horas</h2>
+    <p>Marcar datas e horas em html é um recurso muito importante, visto que podemos nos referir a elas de muitas formas diferentes.</p>
+    <p>Para isso podemos utilizar as tags &lt;time&gt; e o atributo <em>datetime</em>. ex:<time datetime="03-08-2021"> 03 / 08 / 2021</time></p>
+</body>
+
+</html>

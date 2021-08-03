@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Calculadora de Empréstimos</title>
+    <link rel="shortcut icon" href="../../../../lol_img/4475_akali_kda_huh.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../styles/ex002.css'>
+    <meta name="description" content="Esta é uma aplicação web capaz de calcular as
+    parcelas de um empréstimo de acordo com o sistema PRICE de amortização.">
+    <meta name="author" content="Henrique de Paula Rodrigues">
+
+</head>
+
+<body>
+
+    <table>
+        <img src="../../images/lunLema.png" title="Página inicial da Lun" alt="Banner da lun">
+        <ul>
+            <li><a href="../../index.html" title="Formatação de textos e estrutura html">Página inicial</a></li>
+            <li>
+                <a href="ex001.html" title="Olá mundo" description="Um teste que adiciona javascript e css no mesmo arquivo"> Exercício 1</a>
+            </li>
+            <li>
+                Exercício 2
+            </li>
+
+            <li>
+                <a href="ex003.html" title="Imagens, títulos e listas">Exercício 3</a></li>
+            <li>
+                <a href="ex004.html" title="Formatação de textos e estrutura html">Exercício 4</a>
+            </li>
+        </ul>
+        <hr align="center">
+
+        <tr>
+
+            <th> Insira os Dados do Empréstimo:</th>
+            <td>inputs</td>
+            <th> Balanço do Empréstimo. Patrimônio Líquido Cumulativo,Juros</th>
+
+        </tr>
+
+        <tr>
+
+            <td> Montante do Empréstimo(R$):</td>
+            <td><input id="montante" onchange="calcular();" type="number" name="Montante" value="0" placeholder="Digíte o seu montante">
+            </td>
+            <td rowspan="10">
+                <canvas id="graph" width="400" height="400"></canvas>
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td> Taxa anual</td>
+            <td><input id="taxaAnual" onchange="calcular();" type="number" name="Taxa Anual" value="0" placeholder="Digíte a taxa cobrada anualmente"></td>
+
+        </tr>
+
+        <tr>
+
+            <td> Período do empréstimo (anos):</td>
+            <td><input id="anos" onchange="calcular();" type="number" name="Anos" value="0" placeholder="Digíte o prazo do empréstimo"></td>
+
+        </tr>
+
+        <tr>
+
+            <td> CEP(para encontrar credores):</td>
+            <td><input id="cep" onchange="calcular();" type="text" name="CEP" value="" placeholder="Digíte o seu CEP"></td>
+
+        </tr>
+
+        <tr>
+
+            <th> Aproximações de pagamentos:</th>
+            <td><button onclick="calcular();">Calcular</button></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Pagamentos mensais:</td>
+            <td>R$<span class="output" id="pagamentoMensal"></span></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Pagamento total:</td>
+            <td>R$<span class="output" id="pagamentoTotal"></span></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Total de Juros:</td>
+            <td>R$<span class="output" id="jurosTotais"></span></td>
+
+        </tr>
+
+    </table>
+
+    <script src="../../scripts/ex002.js"></script>
+
+</body>
+
+
+</html>

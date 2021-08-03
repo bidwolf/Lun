@@ -1,0 +1,26 @@
+hr {
+    width: 100%;
+    height: 1px;
+    margin-top: auto;
+    margin-left: auto;
+    background-color: rgb(227, 255, 200);
+}
+
+blockquote {
+    margin: auto;
+    font-style: unset;
+    font-family: cursive;
+    border: solid 2px black;
+    border-radius: 10%;
+    background-color: rgba(161, 161, 161, 0.336);
+}
+
+code {
+    background-color: rgba(148, 148, 148, 0.212);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+code var,
+time {
+    color: red;
+}

@@ -1,0 +1,36 @@
+.output {
+    font-weight: bold;
+    color: white;
+}
+
+#payment {
+    text-decoration: underline;
+}
+
+#graph {
+    border: solid rgb(124, 168, 115) 2px;
+    background-color: rgb(116, 189, 135);
+    border-radius: 5%;
+}
+
+input {
+    border: solid "black" 20px;
+    height: 10px;
+    width: min-content;
+    background-color: transparent;
+    color: white;
+}
+
+th,
+td {
+    text-align: center;
+    vertical-align: auto;
+    border: black 2px;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.212);
+    color: white;
+}
+
+body {
+    background-color: rgba(227, 250, 190, 0.952);
+}
